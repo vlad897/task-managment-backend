@@ -10,4 +10,6 @@ app.use(express.json());
 
 app.use("/auth", authRouter);
 
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log("Server OK");
+});
